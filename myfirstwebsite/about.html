@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+                <nav>
+                    <ul>
+                        <li ><a href="/">Home</a></li>
+                        <li class="active"><a href="/about.html">About us</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="btn"><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div class="hero-about container">
+            <div class="info">
+                <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <button class="btn">Get in touch &rarr;</button>
+            </div>
+            <img src="/img/us banner.png" alt="">
+        </div>
+        <div class="container work">
+            <h2>Why work with us</h2>
+            <div class="blocks">
+                <div class="block">
+                    <span class="badge purple">Lorem ipsum</span>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="block">
+                    <span class="badge brown">Lorem ipsum</span>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="block">
+                    <span class="badge green">Lorem ipsum</span>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+        </div>
+        <div class = "about--press">
+            <div class="container">
+                <div class="abcontainer">
+                    <div>
+                        <img src="/img/press about1.png" alt="">
+                    </div>
+                    <div class="info--press">
+                        <h4>Lorem ipsum</h4>
+                        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container team">
+            <div class="blocks--team">
+                <div class="block--team">
+                    <img src="/img/Bill 1.png" alt="">
+                    <h4>John peter</h4>
+                    <h5>COO</h5>
+                </div>
+                <div class="block--team">
+                    <img src="/img/Beverly 1.png" alt="">
+                    <h4>John peter</h4>
+                    <h5>COO</h5>
+                </div>
+                <div class="block--team">
+                    <img src="/img/Claudia 1.png" alt="">
+                    <h4>John peter</h4>
+                    <h5>COO</h5>    
+                </div>
+                <div class="block--team">
+                    <img src="/img/Avatar 1.png" alt="">
+                    <h4>John peter</h4>
+                    <h5>COO</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container email">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <div class="block">
+                    <div>
+                        <h4>Stay in the loop</h4>
+                        <p>Subscribe to receive the latest news and updates about TDA.
+                            We promise not to spam you! </p>
+                    </div>
+                    <div>
+                        <input type="email" id="emailField" placeholder="Enter email address">
+                        <button onclick="checkEmail()">Continue</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">logo</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Zeux</li>
+                    <li>Portfolio</li>
+                    <li>Careers</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact us</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p>+908 89097 890</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    </footer>
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert('Нет знака @');
+            else if (!email.includes('.')) alert('Нет знака .');
+            else alert('Всё отлично!');
+        }
+    </script>
+</body>
+</html>

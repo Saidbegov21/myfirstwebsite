@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About us</a></li>
+                        <li class="active"><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="btn"><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div class="container">
+            <div class="pr-blocks">
+                <div>
+                    <img src="/img/Hero Video.png" alt="">
+                </div>
+                <div class="pr-block">
+                    <h1>Lorem ipsum dolor sit, amet consectetur</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ducimus, commodi facilis tenetur nam, esse, quos explicabo necessitatibus consequatur tempore magni eius. Consectetur ex quidem, commodi fuga temporibus iusto voluptate.</p>
+                    <div class="info-pr">
+                        <ul>
+                            <li><img src="/img/galochka.png" alt="">Lorem Ipsum is simply</li>
+                            <li><img src="/img/galochka.png" alt="">Lorem Ipsum is simply</li>
+                            <li><img src="/img/galochka.png" alt="">Lorem Ipsum is simply</li>
+                            <li><img src="/img/galochka.png" alt="">Lorem Ipsum is simply</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-blocks">
+                <div class="pr-block2">
+                    <h1>Lorem Ipsum is simply dummy text dummy text</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <button class="btn">Read more</button>
+                </div>
+                <div>
+                    <img src="/img/portfolio banner2.png" alt="">
+                </div>
+            </div>
+            <div class="pr-blocks">
+                    <div>
+                        <img src="/img/portfolio banner3.png" alt="">
+                    </div>
+                    <div class="pr-block2">
+                        <h1>Lorem Ipsum is simply dummy text dummy text</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <button class="btn">Read more</button>
+                    </div>
+            </div>
+            <div class="pr-blocks">
+
+                <div class="pr-block2">
+                    <h1>Lorem Ipsum is simply dummy text dummy text</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <button class="btn">Read more</button>
+                </div>
+                <div>
+                    <img src="/img/portfolio banner4.png" alt="">
+                </div>
+        </div>
+        </div>
+        <div class="container email">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <div class="block">
+                    <div>
+                        <h4>Stay in the loop</h4>
+                        <p>Subscribe to receive the latest news and updates about TDA.
+                            We promise not to spam you! </p>
+                    </div>
+                    <div>
+                        <input type="email" id="emailField" placeholder="Enter email address">
+                        <button onclick="checkEmail()">Continue</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">logo</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Zeux</li>
+                    <li>Portfolio</li>
+                    <li>Careers</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact us</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p>+908 89097 890</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    </footer>
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert('Нет знака @');
+            else if (!email.includes('.')) alert('Нет знака .');
+            else alert('Всё отлично!');
+        }
+    </script>
+</body>
+</html>
